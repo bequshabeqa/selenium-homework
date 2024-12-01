@@ -17,7 +17,6 @@ public class CommandsTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
-//        WebElement enableButton = driver.findElement(By.xpath("//*[@id="input-example"]/button")).click(); ar mushaobs
         WebElement enableButton = driver.findElement(By.xpath("//button[text()='Enable']"));
         enableButton.click();
 
