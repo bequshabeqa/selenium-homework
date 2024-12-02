@@ -21,7 +21,5 @@ public class WaitsTest {
         WebElement message = driver.findElement(By.xpath("//*[@id=\"progressBar\"]/div"));
         System.out.println("შედეგი: " + message.getText() + " 100%");
 
-
-
     }
 }
