@@ -3,7 +3,6 @@ package Excercise_5;
 import Data.userNameData;
 import Steps.AuthorizationSteps;
 import Utils.SetUpClass;
-import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 

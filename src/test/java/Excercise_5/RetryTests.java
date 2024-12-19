@@ -1,7 +1,6 @@
 package Excercise_5;
 
 import Utils.RetryAnalyzer;
-import Utils.SetUpClass;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
