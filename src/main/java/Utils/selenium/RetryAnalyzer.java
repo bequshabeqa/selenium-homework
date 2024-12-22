@@ -1,4 +1,4 @@
-package Utils;
+package Utils.selenium;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

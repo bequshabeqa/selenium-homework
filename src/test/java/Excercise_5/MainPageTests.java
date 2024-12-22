@@ -1,15 +1,15 @@
 package Excercise_5;
 
-import Data.userNameData;
-import Steps.AuthorizationSteps;
-import Utils.SetUpClass;
+import Data.selenium.userNameData;
+import Steps.selenium.AuthorizationSteps;
+import Utils.selenium.SetUpClass;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class MainPageTests extends SetUpClass {
 
-    Data.userNameData userNameData = new userNameData();
+    Data.selenium.userNameData userNameData = new userNameData();
     AuthorizationSteps authorizationSteps = new AuthorizationSteps();
 
     @BeforeMethod
@@ -22,14 +22,14 @@ public class MainPageTests extends SetUpClass {
 
     @Test
     public void checkMainPage() {
-        Assert.assertTrue(false);
+        Assert.fail();
     }
     @Test
     public void checkMainPage2() {
-        Assert.assertTrue(false);
+        Assert.fail();
     }
     @Test
     public void checkMainPage3() {
-        Assert.assertTrue(false);
+        Assert.fail();
     }
 }

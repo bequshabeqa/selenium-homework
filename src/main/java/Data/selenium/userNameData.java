@@ -1,8 +1,8 @@
-package Data;
+package Data.selenium;
 
 public class userNameData {
 
     public String validUserName = "admin";
 
-    public String validPassword = "validPassword";
+    public String validPassword = "Password";
 }

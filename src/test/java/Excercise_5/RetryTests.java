@@ -1,6 +1,6 @@
 package Excercise_5;
 
-import Utils.RetryAnalyzer;
+import Utils.selenium.RetryAnalyzer;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

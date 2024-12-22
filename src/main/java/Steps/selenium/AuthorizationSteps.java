@@ -1,6 +1,6 @@
-package Steps;
+package Steps.selenium;
 
-import Elements.AuthorizationElements;
+import Elements.selenium.AuthorizationElements;
 import org.testng.Assert;
 
 public class AuthorizationSteps extends AuthorizationElements {
@@ -23,4 +23,6 @@ public class AuthorizationSteps extends AuthorizationElements {
     public void checkFlashMessageErrorText(String errorText) {
         Assert.assertTrue(findElement(flashMessage).getText().contains(errorText));
     }
+
+
 }

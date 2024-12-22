@@ -1,8 +1,8 @@
 package Excercise_5;
 
-import Data.userNameData;
-import Steps.AuthorizationSteps;
-import Utils.SetUpClass;
+import Data.selenium.userNameData;
+import Steps.selenium.AuthorizationSteps;
+import Utils.selenium.SetUpClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
