@@ -20,19 +20,16 @@ public class davaleba_3_1 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         long position1 = (Long) ((JavascriptExecutor) driver).executeScript("return window.pageYOffset");
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500);");
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         Thread.sleep(2000);
         long newPosition1 = (Long) ((JavascriptExecutor) driver).executeScript("return window.pageYOffset");
         Assert.assertFalse(newPosition1 > position1, "Scroll-მა არ იმუშავა სწორად!");
 
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500);");
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         Thread.sleep(2000);
         long newPosition2 = (Long) ((JavascriptExecutor) driver).executeScript("return window.pageYOffset");
         Assert.assertFalse(newPosition2 > newPosition1, "მეორე Scroll-მა არ იმუშავა სწორად!");
 
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500);");
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         Thread.sleep(2000);
         long newPosition3 = (Long) ((JavascriptExecutor) driver).executeScript("return window.pageYOffset");
         Assert.assertFalse(newPosition3 > newPosition2, "მესამე Scroll-მა არ იმუშავა სწორად!");
