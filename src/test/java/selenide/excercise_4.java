@@ -1,13 +1,11 @@
 package selenide;
 
 import Utils.selenide.SetUpClass;
-import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.lang.module.Configuration;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -21,12 +19,12 @@ public class excercise_4 extends SetUpClass {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
 
-//        Configuration.browser = "chrome";
-//        Configuration.browserCapabilities = options;
-//        Configuration.browserSize = null;
-//        Configuration.holdBrowserOpen = true;
-//        Configuration.savePageSource = false;
-//        Configuration.timeout = 15000;
+        Configuration.browser = "chrome";
+        Configuration.browserCapabilities = options;
+        Configuration.browserSize = null;
+        Configuration.holdBrowserOpen = true;
+        Configuration.savePageSource = false;
+        Configuration.timeout = 15000;
     }
 
     @Test
@@ -66,4 +64,5 @@ public class excercise_4 extends SetUpClass {
 
         $x("//*[@id=\"APjFqb\"]").sendKeys(Keys.ENTER);
     }
+
 }

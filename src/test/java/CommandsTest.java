@@ -12,7 +12,8 @@ public class CommandsTest {
 
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver;
+        driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 

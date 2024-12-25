@@ -10,7 +10,7 @@
     <test name="Login Tests">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="Excercise_5.MainPageTests">
+            <class name="Excercise_3.davaleba_3_1">
             </class>
         </classes>
     </test>
