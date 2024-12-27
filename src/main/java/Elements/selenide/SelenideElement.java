@@ -1,7 +1,5 @@
 package Elements.selenide;
 
-import org.openqa.selenium.Alert;
-
 import static com.codeborne.selenide.Selenide.$;
 
 public class SelenideElement {
@@ -10,4 +8,6 @@ public class SelenideElement {
 
     com.codeborne.selenide.SelenideElement tooltip = $("div.tooltip-inner");
 
+    public void scrollTo() {
+    }
 }
