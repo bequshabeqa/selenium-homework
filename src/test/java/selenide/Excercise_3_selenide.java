@@ -35,6 +35,9 @@ public class Excercise_3_selenide extends SetUpClass {
 
         open("https://the-internet.herokuapp.com/infinite_scroll");
 
+        scrollSteps.scroll1.scrollTo();
+        scrollSteps.scroll2.scrollTo();
+        scrollSteps.scroll3.scrollTo();
 
 
     }
