@@ -1,5 +1,6 @@
 package selenide;
 
+import Steps.selenide.ScrollSteps;
 import Steps.selenide.SubmitButtonSteps;
 import Utils.selenide.SetUpClass;
 import com.codeborne.selenide.Configuration;
@@ -15,7 +16,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class Excercise_3_selenide extends SetUpClass {
 
     SubmitButtonSteps submitButtonSteps = new SubmitButtonSteps();
-
+    ScrollSteps scrollSteps = new ScrollSteps();
 
     @BeforeMethod
     public static void SetUp() {
@@ -34,9 +35,9 @@ public class Excercise_3_selenide extends SetUpClass {
 
         open("https://the-internet.herokuapp.com/infinite_scroll");
 
-
-
-
+        scrollSteps.scroll1.scrollTo();
+        scrollSteps.scroll2.scrollTo();
+        scrollSteps.scroll3.scrollTo();
 
 
     }
